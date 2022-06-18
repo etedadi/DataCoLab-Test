@@ -18,10 +18,10 @@ function Content({selectedItem, setSelectedItem}) {
     {img: images.p, title: "Pipedrive"},
   ]
   const handleSearch = (e) => {
+    setValue(e.target.value)
     if (selectedItem !== 0) {
       setSelectedItem(0)
     }
-    setValue(e.target.value)
   }
 
   return (
@@ -40,12 +40,18 @@ function Content({selectedItem, setSelectedItem}) {
         </div>
         <div className="search">
           <img src={images.search}/>
-          <input value={value} onChange={handleSearch}/>
+          <input
+            value={value}
+            onChange={handleSearch}
+          />
         </div>
       </div>
 
       <div className="main-content">
-        {selectedItem === 1 ? Tabs[selectedTab] : selectedItem === 2 ? <Settings/> : <Search text={value}/>}
+        {selectedItem === 1 ? Tabs[selectedTab]
+          : selectedItem === 2 ? <Settings/>
+            : <Search text={value}/>
+        }
       </div>
     </div>
   );

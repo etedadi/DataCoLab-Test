@@ -4,7 +4,7 @@ import Content from "./components/Content";
 import './App.scss';
 
 function App() {
-  const [selectedItem, setSelectedItem] = useState(0);
+  const [selectedItem, setSelectedItem] = useState(1);
   return (
     <div className="App">
       <Sidebar
