@@ -1,0 +1,6 @@
+export const googleDrive = require('./google-drive.png')
+export const hubspot = require('./hubspot.png')
+export const search = require('./magnifying-glass.png')
+export const campaigns = require('./megaphone.png')
+export const p = require('./p.png')
+export const setting = require('./settings.png')
