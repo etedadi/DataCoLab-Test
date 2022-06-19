@@ -43,7 +43,7 @@ function Content({selectedItem, setSelectedItem}) {
           <input
             value={value}
             onChange={handleSearch}
-            placeholder=" I am looking for"
+            placeholder="I am looking for"
           />
         </div>
       </div>

@@ -1,12 +1,12 @@
 import './style.scss';
 
-function Popdrive({text}) {
+function Pipedrive({text}) {
 
   return (
-    <div id="Popdrive">
-      <h3>Popdrive</h3>
+    <div id="Pipedrive">
+      <h3>Pipedrive</h3>
     </div>
   );
 }
 
-export default Popdrive;
+export default Pipedrive;
